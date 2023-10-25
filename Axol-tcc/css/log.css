@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+  .container2 .content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 100px;
+  }
+.content2 .image-box{
+    max-width: 40%;
+  }
+  .content2 .image-box img{
+    width: 100%;
+  }
+  .content2 .topic{
+    font-size: 24px;
+    font-weight: 500;
+    color: #b86b68;
+  }
+  .content2 form{
+    width: 40%;
+    margin-right: 80px;
+  }
+  .content2 .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+  }
+  .content2 .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .content2 .input-box input:focus,
+  .content2 .input-box input:valid{
+    border-color: #b86b68;
+    background-color: #fff;
+  }
+  .content2 .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #b86b68;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .content2 .input-box input:focus ~ label,
+  .content2 .input-box input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: #b86b68;
+    background: #fff;
+  }
+  .content2 .message-box{
+    min-height: 100px;
+    position: relative;
+  }
+  .content2 .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #b86b68;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .content2 .message-box textarea:focus{
+    border-color: #b86b68;
+    background-color: #fff;
+  }
+  .content2 .message-box label{
+    position: absolute;
+    font-size: 16px;
+    color: #b86b68;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .content2 .message-box textarea:focus ~ label{
+    left: 12px;
+    top: -10px;
+    color: #b86b68;
+    font-size: 14px;
+    background: #fff;
+  }
+  .content2 .input-box input[type="submit"]{
+    color: #fff;
+    background: #b86b68;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  .content2 .input-box input[type="submit"]:hover{
+    background-color: #b86b68;
+  }
+  @media (max-width:1000px) {
+    .content2 .image-box{
+      max-width: 70%;
+    }
+    .content2{
+      padding: 10px 0;
+    }
+  }
+  @media (max-width:900px) {
+    .content2 .image-box{
+      display: none;
+    }
+    .content2 form{
+      width: 100%;
+      margin-left: 30px;
+    }
+  }
+  

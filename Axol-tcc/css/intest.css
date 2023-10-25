@@ -1,0 +1,22 @@
+.contaner { border:2px solid #ccc; width:400px; height: 150px; overflow-y: scroll;
+
+    /* Contaner */
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+   }
+   
+   /* Nome especialidade */
+   #nomeEspecialidade{
+    margin-left:99px;
+    position:relative;
+    top:21px;
+    min-width:0px;
+    box-shadow:none;
+    display:flex;
+    color:rgb(0, 0, 0);
+   }
+   
+   
+   
